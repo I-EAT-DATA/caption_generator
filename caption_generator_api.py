@@ -7,7 +7,7 @@ from flask import (
 app = Flask(__name__)
 
 # Create a URL route in our application for "/"
-@app.route('/jokemodel')
+@app.route('/caption_generator')
 def jokemodel():
     model, tokenizer = caption_generator.init_generator()
 
